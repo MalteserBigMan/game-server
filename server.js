@@ -1,8 +1,13 @@
-import dotenv from "dotenv"
-dotenv.config()
-import Express from "express"
-import cors from "cors"
-import { rateLimit } from 'express-rate-limit'
+// import dotenv from "dotenv"
+// dotenv.config()
+// import Express from "express"
+// import cors from "cors"
+// import { rateLimit } from 'express-rate-limit'
+// GLITCH HATAR OSS OCH IMPORT :(
+require('dotenv').config()
+const Express = require('express')
+const cors = require('cors')
+const { rateLimit } = require('express-rate-limit')
 const app = Express()
 
 const PORT = 3000 || process.env.PORT
